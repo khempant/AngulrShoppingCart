@@ -8,19 +8,24 @@ import { CartComponent } from './component/cart/cart.component';
 import { ProductsComponent } from './component/products/products.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {HttpClientModule} from '@angular/common/http';
+import { FilterPipe } from './filter.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CartComponent,
-    ProductsComponent
+    ProductsComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
